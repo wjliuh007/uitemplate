@@ -20,6 +20,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/***
+ * 随便改点东西
+ * @author jie
+ *
+ */
 @Controller
 @RequestMapping("/contrl")
 public class UiController {
@@ -29,14 +34,7 @@ public class UiController {
 	public static String url = "jdbc:mysql://localhost:3306/localdb?useUnicode=true&characterEncoding=GBK";
 	public static String user = "root";
 	public static String pwd = "1q2w3e4r";
-	
-	//sqlserver
-//	public static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-//	public static String url = "jdbc:sqlserver://localhost:1433;DatabaseName=plusoft_test;";
-//	public static String user = "";
-//	public static String pwd = ""; 	
 
-	////////////////////////////////////////////////////
 	public String InsertNode(HashMap n) throws Exception
 	{
 		

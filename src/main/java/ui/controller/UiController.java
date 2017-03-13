@@ -442,6 +442,7 @@ public class UiController {
 	    		
 	    		if(v != null && (v.getClass() == Date.class || v.getClass() == java.sql.Date.class || v.getClass()==java.sql.Timestamp.class)){
 	    			Timestamp ts= rs.getTimestamp(i);
+	    			//修改mysql时间戳，timestamp类型转换
 	    			v = getDateFormat(ts);
 	    			
 	    		}else if(v != null && v.getClass() == Clob.class){
